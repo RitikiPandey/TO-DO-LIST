@@ -2,22 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url("TODO-APP-BG.jpg");
+    min-height: 100vh;
+    overflow: hidden;
+}
+body img{
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    min-width: 100vw;
 }
 
 .wrapper{
-    margin: 120px auto;
-    max-width: 400px;
+    position: relative;
     width: 100%;
+    max-width: 400px;
+    min-height: 230px;
     background: #fff;
     border-radius: 5px;
     padding: 25px;
